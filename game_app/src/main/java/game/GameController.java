@@ -20,7 +20,7 @@ public class GameController {
         }
         else {
 
-            boolean success = engine.placeMarker(row, col, currentPlayer)
+            boolean success = engine.placeMarker(row, col, currentPlayer);
 
             if (success) {
                 System.out.println("marker placed!");
