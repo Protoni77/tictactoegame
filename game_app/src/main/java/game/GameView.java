@@ -29,13 +29,19 @@ public class GameView  extends JFrame{
     private void setupUI() {
         setTitle("Tic Tac Toe");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        setSize(400, 450);
+        setLocationRelativeTo(null);
 
         JPanel mainPanel = new JPanel();
         mainPanel.setLayout(new BorderLayout(10, 10));
         mainPanel.setBackground(Color.LIGHT_GRAY);
         mainPanel.setBorder(BorderFactory.createEmptyBorder(10, 10, 10, 10));
 
-
+        // TODO: dodaj planszę (grid 3x3 z przyciskami)
+        // TODO: dodaj status label na górze
+        // TODO: dodaj przycisk restart na dole
+        
+        add(mainPanel);
         setVisible(true);
 
     }
