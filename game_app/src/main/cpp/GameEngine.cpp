@@ -109,7 +109,7 @@ TicTacToeEngine* getEngine() {
 
 bool placeMarker(int row, int col, char player) {
     TicTacToeEngine* engine = getEngine();
-    bool result = g_engine->placeMarker(row, col, player);
+    bool result = engine->placeMarker(row, col, player);
     return result;
 }
 

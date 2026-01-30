@@ -19,7 +19,7 @@ JNIEXPORT void JNICALL Java_game_GameEngine_initGame
 
 JNIEXPORT jboolean JNICALL Java_game_GameEngine_placeMarker
   (JNIEnv *env, jobject  obj, jint row, jint col, jchar player) {
-    result = placeMarker(row, col, player);
+    bool result = placeMarker(row, col, player);
     return result ? JNI_TRUE : JNI_FALSE;
   }
 
